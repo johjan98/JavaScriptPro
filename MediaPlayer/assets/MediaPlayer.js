@@ -1,3 +1,4 @@
+//JS no tiene implementado el uso de clases. Sin embargo, de esta forma se pueden crear.
 
 function mediaPlayer(config){
   this.media = config.el;
@@ -21,11 +22,11 @@ mediaPlayer.prototype.playPause = function(){
 };
 
 mediaPlayer.prototype.mute = function(){
-  this.media.muted = true;
-};
-
-mediaPlayer.prototype.unmute = function(){
-  this.media.muted = false;
+  if (this.media.muted){
+    this.media.muted = false;
+  } else {
+    this.media.muted = true;
+  }
 };
 
 export default mediaPlayer;
