@@ -4,8 +4,10 @@ function autoPlay(){
 }
 
 autoPlay.prototype.run = function(player){
-  player.mute();
-  player.playPause();
+  if (!player.muted){
+    player.muted = true;
+  }
+  player.play();
 };
 
 export default autoPlay;
