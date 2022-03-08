@@ -1,4 +1,4 @@
-
+//Este archivo ebe estar en la parte desde donde se ejecuta el proyecto.
 const VERSION = "v1";
 
 //Se cargan los archivos dentro del caché cuando se abre por primera vez
